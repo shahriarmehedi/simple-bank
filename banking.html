@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to simple bank</title>
+    <title>Welcome to Simple Bank</title>
+
+    <!-- TailwindCSS Style Sheet CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>
-        Hello!
-    </h1>
+<body class="w-11/12 mx-auto text-center bg-gray-50">
+    <header class="mt-12">
+        <h1 class="text-3xl font-bold mb-10 text-gray-600">
+            Welcome To Your Account
+        </h1>
+    </header>
+    <main>
+
+        <!-- Balance & History -->
+
+        <section class="mt-20">
+            <div class="grid grid-cols-3 gap-3 text-white">
+                <div class="bg-green-500 rounded p-8">
+                    <h3 class="text-2xl">Deposited</h3>
+                    <h3 class="text-4xl">৳ <span id="deposited-total">00</span></h3>
+                </div>
+                <div class="bg-blue-500 rounded p-8">
+                    <h3 class="text-2xl">Withdrawn</h3>
+                    <h3 class="text-4xl">৳ <span id="withdrawn-total">00</span></h3>
+                </div>
+                <div class="bg-yellow-500 rounded p-8">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h3 class="text-4xl">৳ <span id="current-balance">00</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit & Withdraw -->
+
+        <section class="mt-3">
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-purple-500 rounded p-20">
+                    <h3 class="text-2xl m-5 text-white">Deposit Here</h3>
+                    <input id="deposit-input" class="px-5 py-3 outline-none block mx-auto rounded-3xl" type="number" placeholder="Enter Amount" >
+                    <button id="deposit-btn" class="mt-7 bg-gray-700 rounded px-10 py-3 text-white" type="submit">Deposit</button>
+                </div>
+                <div class="bg-pink-500 rounded p-20">
+                    <h3 class="text-2xl m-5 text-white">Withdraw Here</h3>
+                    <input id="withdraw-input" class="px-5 py-3 outline-none block mx-auto rounded-3xl" type="number" placeholder="Enter Amount" >
+                    <button id="withdraw-btn" class="mt-7 bg-gray-700 rounded px-10 py-3 text-white" type="submit">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="js/banking.js"></script>
 </body>
 </html>
