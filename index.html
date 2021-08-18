@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank</title>
+
+    <!-- TailwindCSS Style Sheet CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="w-3/4 mx-auto text-center">
+    <header class="mt-12">
+        <h1 class="text-4xl font-bold mb-10 text-gray-800">
+            Welcome To Simple Bank
+        </h1>
+    </header>
+    <main>
+        <!-- Login Section -->
+        <section class=" mx-auto bg-green-400 p-10 rounded-2xl content-center sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-1/2 2xl:w-1/2 mb-20">
+            <div class="">
+                <h3 class="text-3xl text-white mb-10">
+                    Please Login
+                </h3>
+                <input id="user-email" class="px-5 py-3 outline-none block m-5 sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-3/4 2xl:w-1/2 rounded-3xl mx-auto" type="email" name="" id="" placeholder="type your email">
+                <input id="user-password" class="px-5 py-3 outline-none block m-5 sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-3/4 2xl:w-1/2 rounded-3xl mx-auto" type="password" name="" id="" placeholder="type your password">
+                <p class="text-white">
+                    Email: demo@demo.com <br>
+                    Password: 12345
+                </p>
+                <button id="login-btn" class="mt-7 bg-gray-800 rounded px-10 py-3 text-white" type="submit">Login</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>
